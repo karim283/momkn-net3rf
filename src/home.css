@@ -1,0 +1,288 @@
+body {
+  background-color: #e2edf8;
+  width: 100%;
+  height: 100%;
+}
+div {
+  width: 95%;
+  height: 40rem;
+  border-radius: 30px;
+  opacity: 0px;
+  background: #ffffff;
+}
+.img1 {
+  position: relative;
+  width: 53.53px;
+  height: 72px;
+  top: 24px;
+  left: 53.23px;
+  color: #5982ab;
+}
+.first {
+  position: relative;
+  width: 822px;
+  height: 203px;
+  top: -55px;
+  left: 510px;
+  gap: 0px;
+  opacity: 0px;
+}
+.hi {
+  position: relative;
+  font-family: "baloo bhaijaan 2";
+  width: 233px;
+  height: 48px;
+  /* top: 155px;*/
+  left: 90px;
+  gap: 0px;
+  opacity: 0px;
+
+  color: #5982ab;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48.08px;
+  text-align: left;
+}
+.text {
+  position: relative;
+  /* width: 419px; */
+  height: 21px;
+  /* top: 227px;*/
+  left: -200px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "baloo bhaijaan 2";
+  font-size: 18px;
+  font-weight: 400;
+  color: #858585;
+
+  line-height: 21.47px;
+  text-align: center;
+}
+.second {
+  position: relative;
+  left: 136px;
+  display: flex;
+  height: 20rem;
+  gap: 50px;
+}
+.box {
+  width: 247px;
+  height: 202px;
+  top: 443px;
+  left: 960px;
+  gap: 0px;
+  border-radius: 20px;
+  background: linear-gradient(281.72deg, #3266e3 4.47%, #54b5a6 88.87%);
+  opacity: 0px;
+}
+.text1 {
+  position: relative;
+  width: 141px;
+  height: 74px;
+  top: 32px;
+  left: 52px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "baloo bhaijaan 2";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 36.63px;
+  text-align: center;
+  color: #ffffff;
+}
+.box1 {
+  width: 247px;
+  height: 202px;
+  top: 443px;
+  left: 960px;
+  gap: 0px;
+  border-radius: 20px;
+  background: #f4f4f4;
+
+  opacity: 0px;
+}
+.text11 {
+  position: relative;
+  width: 43px;
+  height: 37px;
+  top: -19px;
+  left: 104px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "baloo bhaijaan 2";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 36.63px;
+  text-align: center;
+  color: #494949;
+}
+.text12 {
+  position: relative;
+  width: 43px;
+  height: 37px;
+  top: -19px;
+  left: 75px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "baloo bhaijaan 2";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 36.63px;
+  text-align: center;
+  color: #494949;
+}
+.text13 {
+  position: relative;
+  /* width: 43px; */
+  height: 37px;
+  top: -19px;
+  /* left: 104px; */
+  gap: 0px;
+  opacity: 0px;
+  font-family: "baloo bhaijaan 2";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 36.63px;
+  text-align: center;
+  color: #494949;
+}
+.line {
+  position: relative;
+  width: 212px;
+  height: 1px;
+  top: -31px;
+  left: 17px;
+  gap: 0px;
+  border-radius: 2px 0px 0px 0px;
+  opacity: 0px;
+  background: #00000021;
+}
+.icon {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  top: 15px;
+  left: 184px;
+  gap: 0px;
+  opacity: 0px;
+}
+.title {
+  position: relative;
+  width: 93px;
+  height: 22px;
+  top: -37px;
+  left: 80px;
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: "Baloo Bhaijaan 2";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 21.98px;
+  text-align: right;
+  color: #797979;
+}
+.footer {
+  position: relative;
+  width: 1452px;
+  height: 57px;
+  top: -51px;
+  left: 0px;
+  gap: 0px;
+  border-radius: 0px 0px 30px 30px;
+  opacity: 0px;
+  background: #d3e2f2;
+}
+.text2 {
+  position: relative;
+  width: 375px;
+  height: 19px;
+  top: 20px;
+  left: 510px;
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: "Baloo Bhaijaan 2";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.67px;
+  text-align: left;
+  color: #5982ab;
+}
+span {
+  text-decoration: underline;
+}
+.input {
+  position: relative;
+  width: 822px;
+  height: 57px;
+  top: -47px;
+  left: -200px;
+  gap: 0px;
+  border: 1px solid #f3f3f3;
+  border-radius: 15px;
+  opacity: 0px;
+  background: #f3f3f3;
+  text-align: end;
+  outline: 0;
+}
+.input:valid {
+  border-color: green;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2";
+}
+.input:focus:invalid {
+  border-color: red;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2";
+}
+#icon {
+  position: relative;
+  /* width: 28px;
+  height: 28px; */
+  top: 5px;
+  left: 480px;
+  gap: 0px;
+  opacity: 0px;
+  color: #878787;
+  z-index: 3;
+  font-size: 20px;
+}
+.button {
+  position: relative;
+  width: 95px;
+  height: 46px;
+  top: 7px;
+  left: -180px;
+  gap: 0px;
+  border-radius: 25px;
+  opacity: 0px;
+  background: #5982ab;
+  z-index: 2;
+}
+input::placeholder {
+  position: relative;
+  width: 111px;
+  height: 24px;
+  top: 0px;
+  left: 670px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: end;
+  z-index: 3;
+  font-family: "Baloo Bhaijaan 2";
+  font-size: 18px;
+  color: #b8b8b8;
+}
