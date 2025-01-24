@@ -38,9 +38,6 @@ function Home() {
       case "02":
         setPlace("اسكندريه");
         break;
-      case "02":
-        setPlace("اسكندريه");
-        break;
       case "03":
         setPlace("بورسعيد");
         break;
@@ -114,7 +111,11 @@ function Home() {
         setPlace("غير معروف");
     }
 
-    const year = `20${inputValue.slice(1, 3)}`;
+    const year =
+      inputValue.slice(1, 3) > 25
+        ? `19${inputValue.slice(1, 3)}`
+        : `20${inputValue.slice(1, 3)}`;
+
     const month = inputValue.slice(3, 5);
     const day = inputValue.slice(5, 7);
 
@@ -139,60 +140,75 @@ function Home() {
 
   return (
     <>
-      <div className="container">
-        <img src={group} alt="group" className="img1" />
-        <form onSubmit={handleSubmit}>
-          <div className="first">
-            <p className="hi">ممكن نتعرف؟</p>
-            <p className="text">
-              من أي رقم قومي مصري هتقدر تعرف شوية تفاصيل بسيطة
+      <div className="body">
+        <div className="container">
+          <div className="start">
+            <form onSubmit={handleSubmit}>
+              <div className="square">
+                <div className="first">
+                  <p className="hi">ممكن نتعرف؟</p>
+                  <p className="text">
+                    من أي رقم قومي مصري هتقدر تعرف شوية تفاصيل بسيطة
+                  </p>
+                  <div className="in">
+                    <button type="submit" className="button">
+                      ابحث
+                    </button>
+
+                    <input
+                      type="text"
+                      className="input"
+                      placeholder=" ...رقم البطاقة                 "
+                      value={inputValue}
+                      onChange={handleInputChange}
+                      required
+                      pattern="\d{14}"
+                      title="Please enter exactly 14 digits."
+                    />
+                    <i
+                      className="fa-solid fa-magnifying-glass icon-search"
+                      id="icon"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div className="second">
+            <div className="box1">
+              <div className="details">
+                <p className="title">تاريخ الميلاد</p>
+                <img src={icon} alt="Date of Birth" className="icon" />
+              </div>
+              <div className="line"></div>
+              <p className="text13">{date}</p>
+            </div>
+            <div className="box1">
+              <div className="details">
+                <p className="title">محل الإقامة</p>
+                <img src={icon4} alt="Place of Residence" className="icon" />
+              </div>
+              <div className="line"></div>
+              <p className="text12">{place}</p>
+            </div>
+            <div className="box1">
+              <div className="details">
+                <p className="title">النوع</p>
+                <img src={icon3} alt="Gender" className="icon" />
+              </div>
+              <div className="line"></div>
+              <p className="text11">{gender}</p>
+            </div>
+            <div className="box">
+              <p className="text1">قدرنا نعرف الأتي</p>
+            </div>
+          </div>
+          <div className="footer">
+            <p className="text2">
+              <span>kareememadaleen@gmail.com</span>: تقدر تبعتلنا على الإيميل
+              بتاعنا
             </p>
-            <button type="submit" className="button">
-              ابحث
-            </button>
-            <i
-              className="fa-solid fa-magnifying-glass icon-search"
-              id="icon"
-            ></i>
-            <input
-              type="text"
-              className="input"
-              placeholder=" ...رقم البطاقة                 "
-              value={inputValue}
-              onChange={handleInputChange}
-              required
-              pattern="\d{14}"
-              title="Please enter exactly 14 digits."
-            />
           </div>
-        </form>
-        <div className="second">
-          <div className="box1">
-            <img src={icon} alt="Date of Birth" className="icon" />
-            <p className="title">تاريخ الميلاد</p>
-            <div className="line"></div>
-            <p className="text13">{date}</p>
-          </div>
-          <div className="box1">
-            <img src={icon4} alt="Place of Residence" className="icon" />
-            <p className="title">محل الإقامة</p>
-            <div className="line"></div>
-            <p className="text12">{place}</p>
-          </div>
-          <div className="box1">
-            <img src={icon3} alt="Gender" className="icon" />
-            <p className="title">النوع</p>
-            <div className="line"></div>
-            <p className="text11">{gender}</p>
-          </div>
-          <div className="box">
-            <p className="text1">قدرنا نعرف الأتي</p>
-          </div>
-        </div>
-        <div className="footer">
-          <p className="text2">
-            <span>contact@engtechnos.com</span>: تقدر تبعتلنا على الإيميل بتاعنا
-          </p>
         </div>
       </div>
     </>
