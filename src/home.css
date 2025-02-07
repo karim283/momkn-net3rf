@@ -49,6 +49,7 @@ body {
   font-weight: 400;
   color: #858585;
   text-align: center;
+  padding-bottom: 1rem;
 }
 .second {
   display: flex;
@@ -271,6 +272,11 @@ input::placeholder {
 
     border-radius: 2px 0px 0px 0px;
     background: #00000021;
+  }
+  .text11,
+  .text12,
+  .text13 {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 812px) {
